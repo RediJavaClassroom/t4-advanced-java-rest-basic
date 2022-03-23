@@ -28,7 +28,7 @@ public class ShortLinksController {
     return shortLinksService.createShortLink(request);
   }
 
-  @GetMapping("/{key}")
+  @GetMapping("/shorten/{key}")
   public void expandLink(
       final @PathVariable(value = "key") String key,
       final HttpServletResponse httpServletResponse) {
